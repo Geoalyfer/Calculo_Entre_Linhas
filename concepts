@@ -1,0 +1,8 @@
+Para efetuar a diferença entre linhas de uma tabela pode-se utilizar a estrutura abaixo:
+
+SELECT
+dt_venda,
+dt_entrega,
+DATEDIFF(day, dt_venda, dt_entrega) as tempo_entrega
+FROM venda;
+
